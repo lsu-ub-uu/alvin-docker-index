@@ -1,4 +1,5 @@
-FROM  openjdk:13
+ARG CORA_DOCKER_JAVA_VERSION
+FROM cora-docker-java:${CORA_DOCKER_JAVA_VERSION}
 
 COPY /alvinindexmessenger*.jar /indexing/alvinindexmessenger.jar
 
